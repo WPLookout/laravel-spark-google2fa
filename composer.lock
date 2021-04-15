@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e8a11741d33a3d1fc8e55ad0db05b8be",
+    "content-hash": "405bf482baef962dd6e8e9f868714b4e",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -227,16 +227,16 @@
         },
         {
             "name": "pragmarx/google2fa-qrcode",
-            "version": "v2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/antonioribeiro/google2fa-qrcode.git",
-                "reference": "ee335b6f5debf78bc8c781038ea78a27cf74ba4e"
+                "url": "https://github.com/WPLookout/google2fa-qrcode.git",
+                "reference": "e1d220bf99dae1fc03785fa8c993b4bbd79a4425"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonioribeiro/google2fa-qrcode/zipball/ee335b6f5debf78bc8c781038ea78a27cf74ba4e",
-                "reference": "ee335b6f5debf78bc8c781038ea78a27cf74ba4e",
+                "url": "https://api.github.com/repos/WPLookout/google2fa-qrcode/zipball/e1d220bf99dae1fc03785fa8c993b4bbd79a4425",
+                "reference": "e1d220bf99dae1fc03785fa8c993b4bbd79a4425",
                 "shasum": ""
             },
             "require": {
@@ -266,7 +266,6 @@
                     "PragmaRX\\Google2FAQRCode\\Tests\\": "tests/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -280,17 +279,16 @@
             "description": "QR Code package for Google2FA",
             "keywords": [
                 "2fa",
-                "Authentication",
-                "Two Factor Authentication",
+                "QRCode",
+                "authentication",
                 "google2fa",
                 "qr code",
-                "qrcode"
+                "two factor authentication"
             ],
             "support": {
-                "issues": "https://github.com/antonioribeiro/google2fa-qrcode/issues",
-                "source": "https://github.com/antonioribeiro/google2fa-qrcode/tree/v2.1.0"
+                "source": "https://github.com/WPLookout/google2fa-qrcode/tree/2.1.1"
             },
-            "time": "2020-10-17T10:58:45+00:00"
+            "time": "2021-04-15T17:05:14+00:00"
         }
     ],
     "packages-dev": [],
