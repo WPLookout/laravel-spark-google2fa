@@ -8,6 +8,7 @@ use Laravel\Spark\Contracts\Interactions\Settings\Security\EnableTwoFactorAuth;
 use Laravel\Spark\Http\Controllers\Settings\Security\TwoFactorAuthController as Controller;
 use Laravel\Spark\Spark;
 use PragmaRX\Google2FAQRCode\Google2FA;
+use PragmaRX\Google2FAQRCode\QRCode\Bacon;
 
 class TwoFactorAuthController extends Controller
 {
@@ -21,10 +22,14 @@ class TwoFactorAuthController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->g2fa = new Google2FA;
-    }
+	public function __construct()
+	{
+		$this->g2fa = new Google2FA(
+			new Bacon(
+				new \BaconQrCode\Renderer\Image\SvgImageBackEnd()
+			)
+		);
+	}
 
     /**
      * Generate a QR code.
