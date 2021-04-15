@@ -31,7 +31,7 @@
             {{ __('Scan the image below with the two-factor authentication app on your phone.') }}
 
             <div class="text-center mb-2">
-              <img :src="qrcode">
+                {{ $qrcode }}
             </div>
 
             <div v-if="showSecret" class="mb-3">
