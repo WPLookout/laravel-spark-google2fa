@@ -30,9 +30,7 @@
           <div class="modal-body">
             {{ __('Scan the image below with the two-factor authentication app on your phone.') }}
 
-            <div class="text-center mb-2">
-              <img :src="qrcode">
-            </div>
+            <div class="text-center mb-2" v-html="qrcode"></div>
 
             <div v-if="showSecret" class="mb-3">
               {!! __('Select manual entry on your app and enter: :code', ['code' => '@{{ secret }}']) !!}
